@@ -1,0 +1,74 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<title>What is my viewport?</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta name="Author" content="Czigler Ferenc">
+<meta name="Copyright" content="(C) Copyright Czigler Ferenc All Rights Reserved.">
+<meta name="description" content="A small viewport webapp.">
+<meta name="keywords" content="viewport, util, web, coding, coder, code, webdeveloper, webdeveloping, screen, app, webapp">
+<meta name="application-name" content="My viewport">
+<meta name="robots" content="index">
+<meta name="googlebot" content="index">
+<meta name="generator" content="Notepad++">
+
+<style>
+*,:before,:after {
+  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+  word-break: break-all; word-wrap: break-word; white-space: break-word;
+}
+:hover,:active,:visited,:focus { outline: 0; }
+body { font-family: Helvetica,Arial,sans-serif; font-weight: normal; color: black; font-size: 15px; margin: 0; padding: 0; }
+h1,h2,h3,h4,h5,h6 { font-weight: normal; margin: 1rem 0; }
+header { background-color: steelblue; color: white; text-align: center; padding: 20px; font-size: 30px;  }
+footer { background-color: #ddd; color: black; text-align: center; padding: 20px; margin-top: 20px; }
+p { margin: 0; padding: 5px 10px; }
+.container { max-width: 960px; width: 100%; margin: 0 auto; background-color: #eee; }
+a,a:visited,a:active,a:hover { color: blue; }
+a,a:visited,a:active { text-decoration: none; }
+a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header></header>
+
+<div class="container">
+  <div id="data"></div>
+  <footer>
+    <small>
+      &copy; Copyright 2017 <a href="https://github.com/Serrin" target="blank">Ferenc Czigler</a>
+    </small>
+  </footer>
+</div>
+
+<script>
+
+document.querySelector("header").innerHTML = "Your viewport: <code>"+window.innerWidth+"x"+window.innerHeight+"</code>";
+
+var data = document.querySelector("#data");
+
+data.innerHTML += "<p>navigator.appName: <code>"+navigator.appName+"</code></p>";
+data.innerHTML += "<p>navigator.appCodeName: <code>"+navigator.appCodeName+"</code></p>";
+data.innerHTML += "<p>navigator.product: <code>"+navigator.product+"</code></p>";
+data.innerHTML += "<p>navigator.appVersion: <code>"+navigator.appVersion+"</code></p>";
+data.innerHTML += "<p>navigator.userAgent: <code>"+navigator.userAgent+"</code></p>";
+data.innerHTML += "<p>navigator.platform: <code>"+navigator.platform+"</code></p>";
+data.innerHTML += "<p>navigator.language: <code>"+navigator.language+"</code></p>";
+data.innerHTML += "<p>navigator.cookieEnabled: <code>"+navigator.cookieEnabled+"</code></p>";
+data.innerHTML += "<p>navigator.javaEnabled(): <code>"+navigator.javaEnabled()+"</code></p>";
+
+data.innerHTML += "<p><br />window.innerWidth: <code>"+window.innerWidth+"</code></p>";
+data.innerHTML += "<p>window.innerHeight: <code>"+window.innerHeight+"</code></p>";
+data.innerHTML += "<p>screen.width: <code>"+screen.width+"</code></p>";
+data.innerHTML += "<p>screen.height: <code>"+screen.height+"</code></p>";
+data.innerHTML += "<p>screen.availWidth: <code>"+screen.availWidth+"</code></p>";
+data.innerHTML += "<p>screen.availHeight: <code>"+screen.availHeight+"</code></p>";
+data.innerHTML += "<p>screen.colorDepth: <code>"+screen.colorDepth+"</code></p>";
+data.innerHTML += "<p>screen.pixelDepth: <code>"+screen.pixelDepth+"</code></p>";
+
+</script>
+</body>
+</html> 
